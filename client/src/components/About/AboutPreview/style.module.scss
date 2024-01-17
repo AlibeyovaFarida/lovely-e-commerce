@@ -1,0 +1,103 @@
+.about-preview{
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+        align-items: center;
+        .preview-details{
+            padding: 7rem 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2.5rem;
+            .company{
+                display: none;
+            }
+            .title{
+                text-transform: uppercase;
+                color: #252B42;
+                text-align: center;
+                font-family: "Playfair Display", serif;
+                font-size: 44px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 58px;
+                letter-spacing: 0.2px;
+            }
+            .desc{
+                padding: 0 19%;
+                color: #737373;
+                text-align: center;
+                font-family: "Playfair Display", serif;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 30px;
+                letter-spacing: 0.2px;
+            }
+            button{
+                padding: 1rem 2.5rem;
+                border-radius: 5px;
+                background-color: #23856D;
+                border: none;
+                color:  #ffffff;
+                text-align: center;
+                font-family: "Playfair Display", serif;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 22px;
+                letter-spacing: 0.2px;
+            }
+        }
+    }
+}
+@media (min-width: 768px){
+    .about-preview{
+        padding-left: 10rem;
+        padding-right: 5rem;
+        .container{
+            flex-direction: row;
+            align-items: flex-start;
+            gap: 0;
+            .preview-details{
+                padding-left: 2.25rem;
+                align-items: flex-start;
+                gap: 2rem;
+                .company{
+                    display: inline;
+                    color: #252B42;
+                    font-family: "Playfair Display", serif;
+                    font-size: 17px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 26px; /* 152.941% */
+                    letter-spacing: 0.1px;
+                }
+                .title{
+                    color: #252B42;
+                    font-family: "Playfair Display", serif;
+                    font-size: 80px;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 90px; /* 112.5% */
+                    letter-spacing: 0.2px;
+                }
+                .desc{
+                    padding: 0%;
+                    text-align: left;
+                    padding-right: 30%;
+                }
+            }
+            .preview-wrapper{
+            width: 50%;
+            height: 100%;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+        }
+    }
+}

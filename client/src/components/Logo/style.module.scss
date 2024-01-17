@@ -1,0 +1,33 @@
+.logo{
+    width: 11.7rem;
+    height: 3.63rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    .title{
+        font-family: 'Playfair Display', serif;
+        color: #252B42;
+        font-family: Playfair Display;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 35px; 
+        letter-spacing: 0.1px;
+    }
+    .white{
+        color: #ffffff;
+    }
+    .black{
+        color: #252B42;
+    }
+}
+@media (min-width: 768px){
+    .logo{
+        .title{
+            color: #252B42;
+        }
+        .white{
+            color: #ffffff
+        }
+    }
+}

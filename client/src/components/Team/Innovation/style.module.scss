@@ -1,0 +1,111 @@
+.innovation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .container{
+        .innovation-header{
+            padding: 5.25rem 0 3.4375rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            align-items: center;
+            h5{
+                text-transform: uppercase;
+                color: #737373;
+                font-family: "Playfair Display", serif;
+                font-size: 17px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 26px;
+                letter-spacing: 0.1px;
+            }
+            h1{
+                padding: 10%;
+                color: #252B42;
+                text-align: center;
+                font-family: "Montserrat", serif;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 50px;
+                letter-spacing: 0.2px;
+            }
+            .transition{
+                padding: 10px 0;
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                .toHome{
+                    color: #252B42;
+                    font-family: "Playfair Display", serif;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 20px; /* 142.857% */
+                    letter-spacing: 0.2px;
+                }
+                .toTeam{
+                    color: #737373;
+                    font-family: "Playfair Display", serif;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 20px;
+                    letter-spacing: 0.2px;
+                }
+            }
+        }
+        .innovation-main{
+            display: grid;
+            grid-template-columns: 1fr;
+            .right{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+            }
+        }
+    }
+}
+@media (min-width: 768px){
+    .innovation{
+        .container{
+            .innovation-header{
+                padding: 3.125rem 0;
+                h1{
+                    padding: 0;
+                    color: #252B42;
+                    text-align: center;
+                    font-family: "Playfair Display", serif;
+                    font-size: 80px;
+                    font-weight: 500;
+                    line-height: 90px;
+                }
+            }
+            .innovation-main{
+                grid-template-columns: repeat(2,1fr);
+                column-gap: 9px;
+                .left{
+                    width: 700px;
+                    height: 530px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .right{
+                    column-gap: 9px;
+                    row-gap: 10px;
+                    div{
+                        width: 350px;
+                        height: 260px;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

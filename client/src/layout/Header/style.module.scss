@@ -1,0 +1,27 @@
+.homeHeader{
+    padding: 0 2.25rem;
+    .container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+@media (min-width: 768px){
+    .homeHeader{
+        padding: 0 10rem;
+        // background: linear-gradient(to right, rgb(5, 44, 107) 40%, rgb(54, 69, 138), rgb(73, 119, 171)) ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .container{
+            max-width: 1046px;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+    }
+    .homeBg{
+        // background: linear-gradient(to right, rgb(5, 44, 107) 40%, rgb(54, 69, 138), rgb(73, 119, 171)) ;
+    }
+}

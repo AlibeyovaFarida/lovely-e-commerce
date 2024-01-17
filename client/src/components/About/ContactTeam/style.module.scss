@@ -1,0 +1,98 @@
+.contact-team{
+    padding: 1.875rem 0;
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .header{
+            padding: 2.8125rem;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            align-items: center;
+            .title{
+                color: #252B42;
+                text-align: center;
+                font-family: "Montserrat", serif;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 50px;
+                letter-spacing: 0.2px;
+            }
+            .desc{
+                text-align: center;
+                color: #737373;
+                font-family: "Montserrat", serif;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px;
+                letter-spacing: 0.2px;
+            }
+        }
+        .team-members{
+            display: grid;
+            grid-template-columns: 1fr;
+            row-gap: 1.875rem;
+            .member{
+                display: flex;
+                flex-direction: column;
+                .member-details{
+                    padding: 1.875rem;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    .username{
+                        color:#252B42;
+                        text-align: center;
+                        font-family: "Montserrat", serif;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 24px;
+                        letter-spacing: 0.1px;
+                    }
+                    .profession{
+                        color: #737373;
+                        text-align: center;
+                        font-family: "Montserrat", serif;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 24px;
+                        letter-spacing: 0.2px;
+                    }
+                    .social-media-accounts{
+                        padding: 10px 0;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 1.25rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width: 768px){
+    .contact-team{
+        padding: 7rem 10rem;
+        display: flex;
+        justify-content: center;
+        .container{
+            max-width: 1046px;
+            width: 100%;
+            gap: 7rem;
+            .header{
+                .desc{
+                    max-width: 469px;
+                }
+            }
+            .team-members{
+                grid-template-columns: repeat(3,1fr);
+                column-gap: 1.875rem;
+            }
+        }
+    }
+}

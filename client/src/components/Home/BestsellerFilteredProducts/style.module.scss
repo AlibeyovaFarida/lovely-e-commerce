@@ -1,0 +1,185 @@
+.bestseller-filtered-products{
+    .container{
+        padding: 5rem 1.1875rem;
+        .header{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+            border-bottom: 2px solid #ECECEC;
+            h3{
+                color: #252B42;
+                font-family: "Playfair Display", serif;
+                font-size: 25px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 35px;
+                letter-spacing: 0.1px;
+                text-transform: uppercase;
+            }
+            .filterezation{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 1.5rem;
+                padding: 1.5rem 0;
+                .categories{
+                    display: flex;
+                    li{
+                        padding: 0.625rem 1.25rem;
+                        button{
+                            white-space: nowrap;
+                            cursor: pointer;
+                            color: #737373;
+                            text-align: center;
+                            font-family: 'Playfair Display', serif;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 20px; 
+                            letter-spacing: 0.2px;
+                            background-color: transparent;
+                            border: none;
+                        }
+                        .active{
+                            color: #47AD97;
+                            border-bottom: 1px solid #47AD97;
+                        }
+                    }
+                }
+                .btns{
+                    display: flex;
+                    gap: 1rem;
+                    .prev,
+                    .next{
+                        cursor: pointer;
+                        width: 3rem;
+                        height: 3rem;
+                        border-radius: 50%;
+                        border: 1px solid #737373;
+                        background-color: transparent;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+        .products{
+            padding: 1.5rem 2rem;
+            display: grid;
+            justify-content: center;
+            grid-template-columns: 1fr;
+            row-gap: 1.875rem;
+            .product{
+                box-shadow: rgba(255, 255, 255, 0.879) 0px 1px 1px 0px inset, rgba(188, 188, 195, 0.25) 0px 50px 100px -20px, rgba(186, 183, 183, 0.3) 0px 30px 60px -30px;
+                padding-top: 1rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-between;
+                .product-image{
+                    max-width: 326px;
+                    height: 250px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .product-desc{
+                    justify-content: space-between;
+                    padding: 1.5625rem 1.5625rem 2.1875rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 0.625rem;
+                    .title{
+                        color: #252B42;
+                        font-family: "Playfair Display", serif;
+                        font-size: 17px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 26px;
+                        letter-spacing: 0.1px;
+                    }
+                    .category{
+                        color: #737373;
+                        font-family: "Playfair Display", serif;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 20px;
+                        letter-spacing: 0.2px;
+                    }
+                    .prices{
+                        display: flex;
+                        gap: 5px;
+                        .old-price{
+                            color: #BDBDBD;
+                            font-family: "Playfair Display", serif;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 20px; 
+                            letter-spacing: 0.2px;
+                        }
+                        .new-price{
+                            color: #47AD97;
+                            font-family: "Playfair Display", serif;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 20px;
+                            letter-spacing: 0.2px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media(min-width:768px){
+    .bestseller-filtered-products{
+        padding: 5rem 10rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .container{
+            padding: 0;
+            max-width: 1046px;
+            width: 100%;
+            .header{
+                display: flex;
+                flex-direction: row;
+                h3{
+                    white-space:nowrap;
+                }
+                .filterezation{
+                    width: 100%;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+            }
+            .products{
+                padding: 1.5rem 0;
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(4,1fr);
+                column-gap: 1.875rem;
+                row-gap: 0.9375rem;
+                .product{
+                    .product-image{
+                        width: 239px;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,64 @@
+.promotion{
+    padding: 7rem 0;
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.875rem;
+        .title{
+            padding: 0 10%;
+            color: #252B42;
+            text-align: center;
+            font-family: "Playfair Display", serif;
+            font-size: 44px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 58px;
+            letter-spacing: 0.2px;
+        }
+        .desc{
+            padding: 0 10%;
+            color: #737373;
+            text-align: center;
+            font-family: "Playfair Display", serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 22px;
+            letter-spacing: 0.2px;
+        }
+        button{
+            padding: 1rem 2.5rem;
+            border-radius: 5px;
+            background-color: #23856D;
+            border: none;
+            color: #ffffff;
+            font-family: "Playfair Display", serif;
+            font-size: 15px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 22px;
+            letter-spacing: 0.2px;
+        }
+        .sosial-media-accounts{
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            gap: 2.125rem;
+        }
+    }
+}
+@media (min-width: 768px){
+    .promotion{
+        padding: 5rem 10rem;
+        display: flex;
+        justify-content: center;
+        .container{
+            max-width: 1046px;
+            width: 100%;
+            .desc{
+                padding: 0 30%;
+            }
+        }
+    }
+}

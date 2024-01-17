@@ -1,0 +1,58 @@
+.product-information{
+    padding: 10px 0;
+    .container{
+        display: flex;
+        justify-content: center;
+        .information-tabs{
+            display: flex;
+            align-items: center;
+            .desc-tab,
+            .additional-inform-tab,
+            .review-tab{
+                padding: 1.5rem 0.75rem;
+                border: none;
+                background-color: transparent;
+                color: #737373;
+                font-family: "Playfair Display", serif;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 20px;
+                letter-spacing: 0.2px;
+            }
+            .review-tab{
+                .review-count{
+                    color: #47AD97;
+                }
+            }
+            .active{
+                font-family: "Montserrat", serif;
+                font-weight: 600;
+                line-height: 24px;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+@media (min-width: 768px){
+    .product-information{
+        padding: 0 10rem;
+        display: flex;
+        justify-content: center;
+        .container{
+            max-width: 1046px;
+            width: 100%;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+            .information-tabs{
+                justify-content: center;
+                width: 100%;
+                border-bottom: 1px solid #ECECEC;
+                .active{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

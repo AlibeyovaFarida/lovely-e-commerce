@@ -1,0 +1,131 @@
+.bestseller-products {
+  padding: 5rem 2.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    .title {
+      color: #252b42;
+      font-family: "Playfair Display", serif;
+      font-size: 25px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 35px;
+      letter-spacing: 0.1px;
+      text-transform: uppercase;
+    }
+    .products {
+      padding: 0 1.5rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      row-gap: 1.875rem;
+      .product {
+        box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+        // border: 1px solid #2dc071;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        padding: 1.5rem;
+        justify-content: space-between;
+        .product-title {
+          color: #252b42;
+          font-family: "Playfair Display", serif;
+          font-size: 17px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 26px;
+          letter-spacing: 0.1px;
+        }
+        .product-categories {
+          color: #737373;
+          font-family: "Playfair Display", serif;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 20px;
+          letter-spacing: 0.2px;
+        }
+        .product-wrapper {
+          width: 244px;
+          height: 206px;
+          align-self: center;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+          }
+        }
+        .price {
+          color: #2dc071;
+          font-family: "Playfair Display", serif;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 20px;
+          letter-spacing: 0.2px;
+        }
+      }
+      .product:hover {
+        .product-wrapper{
+            img{
+                transform: scale(1.1);
+                transition: all 0.5s;
+            }
+        }
+      }
+    }
+    .products::-webkit-scrollbar {
+      display: none;
+    }
+    .count-btn{
+      cursor: pointer;
+      background-color: transparent;
+      border: none;
+      border-radius: 10px;
+      background-color: #23856D;
+      padding: 0.75rem 1.5rem;
+      color: #ffffff;
+      font-family: "Playfair Display", serif;
+      font-size: 16px;
+      font-weight: 500;
+      letter-spacing: 0.1px;
+    }
+  }
+}
+@media (min-width: 768px) {
+  .bestseller-products {
+    padding: 5rem 10rem 0;
+    .container {
+      max-width: 1046px;
+      gap: 2rem;
+      .title {
+        align-self: flex-start;
+      }
+      .products {
+        width: 100%;
+        grid-template-columns: repeat(4,1fr);
+        column-gap: 23px;
+        row-gap: 2rem;
+        width: 100%;
+        .product {
+          padding: 3rem 1.5rem 1.5rem;
+          max-width: 245px;
+          .product-wrapper {
+            width: 197px;
+            height: 206px;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: contain;
+            }
+          }
+        }
+      }
+    }
+  }
+}

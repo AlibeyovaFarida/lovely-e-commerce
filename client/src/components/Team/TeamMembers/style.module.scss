@@ -1,0 +1,81 @@
+.team-members{
+    padding: 1.875rem 0 4rem;
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .title{
+            padding: 3rem 10%;
+            color:#252B42;
+            text-align: center;
+            font-family: "Montserrat", serif;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 50px; /* 125% */
+            letter-spacing: 0.2px;
+        }
+        .members{
+            padding-bottom: 1.875rem;
+            display: grid;
+            grid-template-columns: 1fr;
+            row-gap: 1.875rem;
+            .member{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .member-details{
+                    padding: 1.875rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 10px;
+                    .username{
+                        color: #252B42;
+                        font-family: "Montserrat", serif;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 24px;
+                        letter-spacing: 0.1px;
+                    }
+                    .profession{
+                        color: #737373;
+                        font-family: "Montserrat", serif;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 24px; /* 171.429% */
+                        letter-spacing: 0.2px;
+                    }
+                    .social-media-accounts{
+                        padding: 10px 0;
+                        display: flex;
+                        align-items: center;
+                        gap: 1.25rem;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (min-width:768px){
+    .team-members{
+        padding: 7rem 10rem;
+        display: flex;
+        justify-content: center;
+        .container{
+            max-width: 1046px;
+            width: 100%;
+            .title{
+                padding: 0;
+                margin-bottom: 7rem;
+            }
+            .members{
+                grid-template-columns: repeat(3,1fr);
+                column-gap: 1.875rem;
+                row-gap: 7rem;
+            }
+        }
+    }
+}

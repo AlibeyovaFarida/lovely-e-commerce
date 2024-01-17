@@ -1,0 +1,135 @@
+.wishlist-main {
+    padding: 1rem 2.25rem;
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    .transitions {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      a {
+        color: rgba(0, 0, 0, 0.6);
+        font-family: "Playfair Display", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      h6 {
+        color: #000;
+        font-family: "Playfair Display", sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+    .wishlist-products{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        .title{
+            color: #000;
+            font-family: "Playfair Display", sans-serif;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+        .products{
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.875rem;
+            .product{
+                justify-self: center;
+                max-width: fit-content;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                .product-wrapper{
+                    width: 239px;
+                    height: 300px;
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                .product-details{
+                    width: 100%;
+                    border: 1px solid #47AD97;
+                    padding: 1.5rem 2rem;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: 0.625rem;
+                    .product-name{
+                        color: #252B42;
+                        font-family: "Playfair Display", sans-serif;
+                        font-size: 17px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 26px;
+                        letter-spacing: 0.1px;
+                    }
+                    .product-category{
+                        color: #737373;
+                        font-family: "Playfair Display", sans-serif;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 20px; /* 142.857% */
+                        letter-spacing: 0.2px;
+                    }
+                    .prices{
+                        display: flex;
+                        gap: 5px;
+                        align-items: center;
+                        h6{
+                            font-family: "Playfair Display", sans-serif;
+                            font-size: 14px;
+                            font-style: normal;
+                            font-weight: 700;
+                            line-height: 20px; /* 142.857% */
+                            letter-spacing: 0.2px;
+                        }
+                        .old-price{
+                            color: #BDBDBD;
+                        }
+                        .new-price{
+                            color: #47AD97;
+                        }
+                    }
+                }
+            }
+        }
+    }
+  }
+}
+@media (min-width:768px){
+    .wishlist-main{
+        padding: 1rem 10rem;
+        display: flex;
+        justify-content: center;
+        .container{
+            max-width: 1090px;
+            width: 100%;
+            .wishlist-products{
+                .products{
+                    padding: 0 1rem;
+                    grid-template-columns: repeat(4,1fr);
+                    .product{
+                        .product-wrapper{
+                            height: 100%;
+                        }
+                        .product-details{
+                            height: 100%;
+                            justify-content: space-between;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
